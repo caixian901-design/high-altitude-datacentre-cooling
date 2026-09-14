@@ -1,0 +1,47 @@
+cff-version: 1.2.0
+message: "If you use this code or these results, please cite the preprint below."
+title: "Cooling Architecture Optimization and PUE Modelling for Hyperscale AI Data Centres in High-Altitude Low-Pressure Environments: A Case Study on the Qinghai-Tibetan Plateau"
+type: software
+authors:
+  - family-names: Cai
+    given-names: Xian
+    orcid: "https://orcid.org/0009-0007-5083-7078"
+    affiliation: "School of Intelligent Science and Engineering, Qinghai Minzu University, Xining, Qinghai 810007, China"
+repository-code: "https://github.com/caixian901-design/high-altitude-datacentre-cooling"
+url: "https://caixian901-design.github.io"
+license: MIT
+version: "1.0.0"
+date-released: "2026-09-14"
+keywords:
+  - AI data centre
+  - liquid cooling
+  - cold plate
+  - PUE
+  - power usage effectiveness
+  - high altitude
+  - low pressure
+  - Qinghai-Tibetan Plateau
+  - East Data West Computing
+  - free cooling
+  - thermal management
+  - data centre energy efficiency
+abstract: >-
+  Simulation code, derived data and figures for a modelling study of cooling
+  architecture selection for hyperscale AI data centres at high altitude, where
+  atmospheric pressure is only 70-80 kPa and air density falls to about 80% of its
+  sea-level value. The model couples altitude to air-side cooling capacity, fan power
+  and the air-side coefficient of performance through the air density ratio, giving PUE
+  as an explicit function of the liquid-cooling fraction, and is evaluated with a
+  full-year hourly simulation driven by measured TMYx weather for Xining (2,266 m),
+  Beijing and Shanghai.
+references:
+  - type: article
+    title: "Cooling Architecture Optimization and PUE Modelling for Hyperscale AI Data Centres in High-Altitude Low-Pressure Environments: A Case Study on the Qinghai-Tibetan Plateau"
+    authors:
+      - family-names: Cai
+        given-names: Xian
+        orcid: "https://orcid.org/0009-0007-5083-7078"
+    year: 2026
+    doi: "10.5281/zenodo.22743562"
+    url: "https://doi.org/10.5281/zenodo.22743562"
+    notes: "Preprint, 22 pages, 13 figures, 6 tables."

@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Weather data is not redistributed: download the TMYx/EPW files yourself
+weather/
+*.epw
+
+# OS / editor
+Thumbs.db
+.DS_Store
+.vscode/
+.idea/
+
+# Local scratch
+*.tmp
+_scratch/
