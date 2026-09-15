@@ -4,7 +4,7 @@
 **Affiliation:** School of Intelligent Science and Engineering, Qinghai Minzu University, Xining, Qinghai 810007, China
 **ORCID:** 0009-0007-5083-7078
 **Contact:** caixian901@gmail.com
-**Preprint DOI:** 10.5281/zenodo.22743562
+**Preprint DOI:** 10.5281/zenodo.22743561
 **Manuscript type:** Research Article (Original Research)
 **Date:** September 2026
 

@@ -4,9 +4,9 @@ Simulation code, derived data and figures for the preprint:
 
 > **X. Cai**, *Cooling Architecture Optimization and PUE Modelling for Hyperscale AI Data
 > Centres in High-Altitude Low-Pressure Environments: A Case Study on the Qinghai–Tibetan
-> Plateau*, preprint, 2026. doi:[10.5281/zenodo.22743562](https://doi.org/10.5281/zenodo.22743562)
+> Plateau*, preprint, 2026. doi:[10.5281/zenodo.22743561](https://doi.org/10.5281/zenodo.22743561)
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.22743562-blue)](https://doi.org/10.5281/zenodo.22743562)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.22743562-blue)](https://doi.org/10.5281/zenodo.22743561)
 [![License: MIT](https://img.shields.io/badge/code%20license-MIT-green)](LICENSE)
 [![License: CC BY 4.0](https://img.shields.io/badge/content%20license-CC%20BY%204.0-lightgrey)](https://creativecommons.org/licenses/by/4.0/)
 

@@ -3,7 +3,7 @@
 **A GPU training-load extension to the high-altitude AI data-centre cooling model**
 
 Xian Cai · School of Intelligent Science and Engineering, Qinghai Minzu University
-Companion to the preprint [doi:10.5281/zenodo.22743562](https://doi.org/10.5281/zenodo.22743562)
+Companion to the preprint [doi:10.5281/zenodo.22743561](https://doi.org/10.5281/zenodo.22743561)
 
 ---
 
