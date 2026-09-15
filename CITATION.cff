@@ -10,7 +10,7 @@ authors:
 repository-code: "https://github.com/caixian901-design/high-altitude-datacentre-cooling"
 url: "https://caixian901-design.github.io"
 license: MIT
-version: "1.0.0"
+version: "1.1.0"
 date-released: "2026-09-14"
 keywords:
   - AI data centre
@@ -25,6 +25,12 @@ keywords:
   - free cooling
   - thermal management
   - data centre energy efficiency
+  - GPU training load
+  - distributed training
+  - all-reduce
+  - communication overhead
+  - carbon-aware computing
+  - carbon intensity
 abstract: >-
   Simulation code, derived data and figures for a modelling study of cooling
   architecture selection for hyperscale AI data centres at high altitude, where
@@ -33,7 +39,12 @@ abstract: >-
   and the air-side coefficient of performance through the air density ratio, giving PUE
   as an explicit function of the liquid-cooling fraction, and is evaluated with a
   full-year hourly simulation driven by measured TMYx weather for Xining (2,266 m),
-  Beijing and Shanghai.
+  Beijing and Shanghai. Version 1.1 adds a GPU training-load layer (compute phase plus
+  communication phase) and a three-way parameter sweep over synchronisation interval,
+  liquid-cooling fraction and grid carbon intensity. It reports a makespan-versus-carbon
+  trade-off curve and shows that mean PUE is identical (1.1490) for ten schedules of the
+  same job whose carbon footprint differs by 13x, while the entire liquid-cooling range
+  moves carbon by a schedule-independent 9.1%.
 references:
   - type: article
     title: "Cooling Architecture Optimization and PUE Modelling for Hyperscale AI Data Centres in High-Altitude Low-Pressure Environments: A Case Study on the Qinghai-Tibetan Plateau"

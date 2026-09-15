@@ -2,7 +2,15 @@
 
 All curves are computed from the analytical model in the manuscript:
   ISA pressure/temperature -> air density ratio -> air-side penalties -> PUE(f, h)
-Figures are written as 300-dpi PNGs into ./figures.
+Figures are written as 300-dpi PNGs into the repository's ./figures directory
+(override with the HDC_FIGURES environment variable).
+
+These are the *closed-form* figures of the preprint, which use a
+temperature-independent air-side COP (COP_A0 * rho_r**gamma) so that the PUE
+identity can be read directly off a single plot.  The measured-weather annual
+simulation lives in `annual_simulation.py`, the shared temperature-dependent
+facility model in `cooling_model.py`, and the GPU training-load study in
+`gpu_training_scan.py` / `make_figures_gpu.py`.
 """
 import math
 import os
@@ -13,7 +21,10 @@ import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.patches import FancyArrowPatch, FancyBboxPatch, Rectangle
 
-OUT = r"C:\Users\29102\Desktop\智算中心\论文\figures"
+OUT = os.environ.get(
+    "HDC_FIGURES",
+    os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                 "figures"))
 os.makedirs(OUT, exist_ok=True)
 
 plt.rcParams.update({

@@ -1,0 +1,155 @@
+{
+  "model": "GPU training load x high-altitude cooling x grid carbon intensity",
+  "site": "Xining (Qinghai plateau)",
+  "elevation_m": 2266.0,
+  "rho_r": 0.7998752790424368,
+  "weather_source": "TMYx EPW",
+  "job": {
+    "n_steps": 100000,
+    "t_step1_s": 1.0,
+    "serial_fraction": 0.04,
+    "amdahl_ceiling": 25.0,
+    "t_bw_s": 0.7,
+    "t_lat_s": 0.09,
+    "t_exp": 0.5,
+    "n_gpu_available": 10000,
+    "peak_it_power_mw": 10.4,
+    "rack_peak_kw": 41.6,
+    "f_min_density": 0.5192307692307693,
+    "useful_energy_mwh": 288.88888888888886
+  },
+  "marginal_carbon_kg_per_accelerator_kwh": {
+    "const_030": 0.096,
+    "diel_030": 0.096,
+    "qhd_015": 0.048,
+    "coal_060": 0.192
+  },
+  "parallel_frontier": {
+    "p": [
+      2,
+      4,
+      8,
+      16,
+      32,
+      64,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "interval": [
+      2,
+      4,
+      10,
+      25,
+      32,
+      100,
+      250,
+      500,
+      1000,
+      1000
+    ],
+    "overhead_phi": [
+      0.45892,
+      0.31696,
+      0.21379,
+      0.1615,
+      0.23705,
+      0.1329,
+      0.08621,
+      0.06595,
+      0.04866,
+      0.07037
+    ],
+    "makespan_h": [
+      21.0733,
+      10.2431,
+      5.3946,
+      3.2264,
+      2.4054,
+      1.7308,
+      1.4332,
+      1.2954,
+      1.2198,
+      1.2172
+    ],
+    "pue": [
+      1.14903,
+      1.14903,
+      1.14903,
+      1.14903,
+      1.14903,
+      1.14903,
+      1.14903,
+      1.14903,
+      1.14903,
+      1.14903
+    ],
+    "carbon_t": [
+      64.2537,
+      28.3524,
+      17.7829,
+      11.7731,
+      8.8627,
+      6.7272,
+      5.6992,
+      5.2124,
+      4.953,
+      4.9074
+    ],
+    "speedup": [
+      1.3181,
+      2.7119,
+      5.1492,
+      8.6096,
+      11.5482,
+      16.0489,
+      19.3818,
+      21.4429,
+      22.7724,
+      22.8216
+    ],
+    "speedup_per_accelerator": [
+      0.65907,
+      0.67797,
+      0.64365,
+      0.5381,
+      0.36088,
+      0.25076,
+      0.15142,
+      0.08376,
+      0.04448,
+      0.02229
+    ]
+  },
+  "liquid_fraction_objectives": [
+    {
+      "ci_key": "const_030",
+      "f_energy_optimal": 1.0,
+      "f_carbon_optimal": 1.0,
+      "agree": true,
+      "carbon_spread_pct": 9.112783289592642
+    },
+    {
+      "ci_key": "diel_030",
+      "f_energy_optimal": 1.0,
+      "f_carbon_optimal": 1.0,
+      "agree": true,
+      "carbon_spread_pct": 9.112783289592596
+    },
+    {
+      "ci_key": "qhd_015",
+      "f_energy_optimal": 1.0,
+      "f_carbon_optimal": 1.0,
+      "agree": true,
+      "carbon_spread_pct": 9.112783289592642
+    },
+    {
+      "ci_key": "coal_060",
+      "f_energy_optimal": 1.0,
+      "f_carbon_optimal": 1.0,
+      "agree": true,
+      "carbon_spread_pct": 9.112783289592663
+    }
+  ]
+}
