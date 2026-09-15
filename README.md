@@ -16,8 +16,9 @@ Simulation code, derived data and figures for the preprint:
 
 | Path | Contents |
 |---|---|
-| `manuscript.pdf` | The preprint, 22 pages, 13 figures, 6 tables |
+| `manuscript.pdf` | The preprint, 20 pages, 13 figures, 6 tables (rebuilt 2026-09-15) |
 | `manuscript.md` | Markdown source of the preprint |
+| `manuscript.pdf.precompliance` | The previously published 22-page build, kept for reference only. It contains 146 missing glyphs (Chinese text and the `∝ ∈ · →` operators rendered as empty boxes), a pre-submission editorial note printed inside the reference list, and an Author Contributions statement naming three people other than the sole author. **Superseded — do not cite or redistribute.** |
 | `GPU_TRADEOFF_README.md` | **2-page extension**: GPU training-load model and the PUE/carbon trade-off |
 | `code/cooling_model.py` | Shared facility model: ISA atmosphere, COP, PUE, TMYx weather loader |
 | `code/annual_simulation.py` | 8 760-hour annual simulation for the three sites |

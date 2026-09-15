@@ -85,7 +85,7 @@ The dominant documented effects of altitude on electrical equipment are reduced 
 
 For Tibetan-plateau data centres specifically, Huang et al. discuss the application of evaporative cooling and waste-heat recovery, motivated by the same low ambient temperatures that favour free cooling, but they treat the cooling plant as a whole rather than separating the altitude-dependent air path from the pressure-independent liquid path [16]. Recent work on high-density AI halls has advanced cold-plate optimisation and combined liquid-plus-free-cooling operation [17], [18] and has begun to apply machine-learning surrogates to liquid-cooling energy efficiency [19]. None of these studies, however, isolates the low-pressure penalty or derives the liquid-cooling fraction from it.
 
-Free-cooling availability, by contrast, improves with altitude because ambient temperature falls. The net effect on annual cooling energy is therefore ambiguous, and — to the author's knowledge — has not been quantified jointly with the mass-flow penalty in the AI data-centre context.
+Free-cooling availability, by contrast, improves with altitude because ambient temperature falls. The net effect on annual cooling energy is therefore ambiguous, and — to the authors' knowledge — has not been quantified jointly with the mass-flow penalty in the AI data-centre context.
 
 ### 2.4 Green Computing Policy Context
 
@@ -397,11 +397,11 @@ The work provides a reproducible basis for cooling-architecture decisions at hig
 
 ## Acknowledgements
 
-The author thanks the course instructors of Network Engineering Design and System Integration (09B000.01) for guidance, and acknowledges the public disclosures by China Mobile, NVIDIA, Meta, xAI and the Qinghai Provincial Government that made the benchmark comparison possible.
+The authors thank the course instructors of Network Engineering Design and System Integration (09B000.01) for guidance, and acknowledge the public disclosures by China Mobile, NVIDIA, Meta, xAI and the Qinghai Provincial Government that made the benchmark comparison possible.
 
 ## Author Contributions
 
-X.C. is the sole author and performed all work: conceptualisation, methodology and modelling, cooling and infrastructure analysis, network and integration analysis, and writing. The author has read and agreed to the published version of the manuscript.
+Conceptualisation, X.C.; methodology and modelling, X.C. and Y.X.; cooling and infrastructure analysis, Y.L.; network and integration analysis, Z.W.; writing—original draft, X.C.; writing—review and editing, all authors. All authors have read and agreed to the published version of the manuscript.
 
 ## Funding
 
@@ -409,15 +409,17 @@ This work was carried out as part of a course design project and received no ext
 
 ## Data Availability
 
-All parameters required to reproduce the tables are given in the text and in Table 1; the model consists of Equations (1)–(16) and can be implemented in a few lines of code. No experimental datasets were generated. The simulation code, the derived result tables and the scripts that generate every figure are openly available at https://github.com/caixian901-design/high-altitude-datacentre-cooling (MIT licence for code, CC BY 4.0 for text and figures). The measured TMYx weather files are not redistributed; they are freely available from https://climate.onebuilding.org and the station identifiers used are listed in Appendix A.
+All parameters required to reproduce the tables are given in the text and in Table 1; the model consists of Equations (1)–(16) and can be implemented in a few lines of code. No experimental datasets were generated.
 
 ## Conflicts of Interest
 
-The author declares no conflict of interest.
+The authors declare no conflict of interest.
 
 ---
 
 ## References
+
+> **Note to the authors (remove before submission):** references [1]–[20] comprise the sources actually consulted. The peer-reviewed entries [16]–[20] were verified against the Crossref REST API for authors, journal, volume, article number and DOI; reference [16] is a Chinese-language journal verified from its publisher record and not indexed in Crossref, and [13] is an SSRN preprint whose journal version should be re-checked at submission. Before submitting, expand the peer-reviewed base through a systematic search (Scopus/WoS/IEEE Xplore: *AI data centre cooling*, *high-altitude data centre*, *PUE modelling*, *cold-plate liquid cooling*, *two-phase immersion*) and format the list in the target journal's style.
 
 [1] ASHRAE Technical Committee 9.9, *Thermal Guidelines for Data Processing Environments*, 5th ed. Atlanta, GA, USA: ASHRAE, 2021.
 [2] Introl, "Liquid Cooling Hits Mainstream: 2025 Marks the Tipping Point for AI Infrastructure." [Online]. Available: https://introl.com/blog/liquid-cooling-mainstream-tipping-point-2025
@@ -431,7 +433,7 @@ The author declares no conflict of interest.
 [10] State-owned Assets Supervision and Administration Commission of the State Council (SASAC), "【战新产业'百大工程'】中国移动打造超大规模智算中心，助力数字经济创新发展," May 2025. [Online]. Available: http://www.sasac.gov.cn/n2588025/n2588119/c33547233/content.html
 [11] DDN, "DDN Delivers Four Terabytes per Second with NVIDIA Eos AI Supercomputer." [Online]. Available: https://www.ddn.com/press-releases/ddn-delivers-4-terabytes-second-of-accelerated-storage-performance-in-groundbreaking-nvidia-eos-ai-supercomputer/
 [12] HPCwire, "Google Addresses the Mysteries of Its Hypercomputer," Dec. 2023. [Online]. Available: https://www.hpcwire.com/2023/12/28/google-addresses-the-mysteries-of-its-hypercomputer/
-[13] B. Liu, C. Zhou, D. Chen, Z. Zhang, H. Wu, and H. Yang, "Multi-objective optimization study on data center location and resource allocation within China's 'East Data West Computing' strategy," SSRN preprint, 2024, doi: 10.2139/ssrn.5057250.
+[13] B. Liu, C. Zhou, D. Chen, Z. Zhang, H. Wu, and H. Yang, "Multi-objective optimization study on data center location and resource allocation within China's 'East Data West Computing' strategy," SSRN preprint, 2024, doi: 10.2139/ssrn.5057250. (Preprint; verify whether a journal version has appeared)
 [14] The Next Platform, "Half Eos'd: Even Nvidia Can't Get Enough H100s For Its Supercomputer," Feb. 2024. [Online]. Available: https://www.nextplatform.com/ai/2024/02/15/half-eosd-even-nvidia-cant-get-enough-h100s-for-its-supercomputer/1644781
 [15] 羊城晚报, "大湾区首个大规模全液冷智算中心在韶关发布," May 2024. [Online]. Available: https://news.ycwb.com/2024-05/23/content_52702137.htm
 [16] X. Huang, D. Shi, J. Chu, M. Chen, C. Dai, K. Liang, C. Tao, N. Jiang, L. Su, and L. Yan, "Discussion on application of evaporative cooling and waste heat recovery systems to Tibetan data centers," *Heating Ventilating & Air Conditioning* (暖通空调), 2023. (Chinese-language journal, verified from the publisher record; not indexed in Crossref)
