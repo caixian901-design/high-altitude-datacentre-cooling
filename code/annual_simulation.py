@@ -20,6 +20,10 @@ Model per hour h:
 Weather location: set the HDC_WEATHER environment variable, or place the .epw
 files in <repository>/weather/<site>/.  When a file is missing the sinusoidal
 fallback climate is used and the console says so, so the script always runs.
+
+Pass --no-figures to recompute only the annual table and leave figures 11-13
+untouched (they are the versions embedded in the published preprint; a different
+matplotlib build re-renders them a few pixels wider).
 """
 import os
 import sys
@@ -33,6 +37,7 @@ import numpy as np
 
 import cooling_model as cm
 
+WRITE_FIGURES = "--no-figures" not in sys.argv
 FIG = cm.FIGURE_DIR
 cm.apply_style()
 
@@ -80,7 +85,8 @@ ax.set_xlabel("Hours per year exceeded (thousands)")
 ax.set_ylabel("Dry-bulb temperature ($^\\circ$C)")
 ax.set_xlim(0, 8.76); ax.set_ylim(-25, 42)
 ax.legend(loc="upper right", framealpha=0.9)
-cm.save(fig, "fig11_temperature_duration_curves.png")
+if WRITE_FIGURES:
+    cm.save(fig, "fig11_temperature_duration_curves.png")
 
 # ------------------------------------------------------------------ Fig. 12 annual PUE vs f
 fig, ax = plt.subplots(figsize=(3.8, 2.9))
@@ -97,7 +103,8 @@ ax.set_xlabel("Liquid-cooling fraction $f$")
 ax.set_ylabel("Annual average PUE (8760 h)")
 ax.set_xlim(0, 1); ax.set_ylim(1.10, 1.40)
 ax.legend(loc="upper right", framealpha=0.9)
-cm.save(fig, "fig12_annual_pue_tmy.png")
+if WRITE_FIGURES:
+    cm.save(fig, "fig12_annual_pue_tmy.png")
 
 # ------------------------------------------------------------------ Fig. 13 free cooling + model check
 fig, axes = plt.subplots(1, 2, figsize=(7.0, 2.7))
@@ -141,7 +148,8 @@ axes[1].set_ylabel("Measured TMYx weather (%)")
 axes[1].set_xlim(lim); axes[1].set_ylim(lim)
 axes[1].text(0.03, 0.92, "dashed line = perfect agreement", transform=axes[1].transAxes,
              fontsize=6.3, color="#666")
-cm.save(fig, "fig13_free_cooling_validation.png")
+if WRITE_FIGURES:
+    cm.save(fig, "fig13_free_cooling_validation.png")
 
 # ------------------------------------------------------------------ results table
 print("\n=== Annual simulation results (TMYx 2011-2025, 8760 h) ===")
@@ -165,4 +173,5 @@ path = cm.write_csv("annual_sim_results.csv",
                      "air_free_cooling_pct", "liquid_free_cooling_pct",
                      "PUE_f0", "PUE_f0.8", "PUE_f1"], rows)
 print(f"\ntable: {path}")
-print("figures: fig11, fig12, fig13")
+print("figures: fig11, fig12, fig13" if WRITE_FIGURES
+      else "figures: skipped (--no-figures)")
